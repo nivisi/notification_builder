@@ -99,7 +99,7 @@ Then you can use the `buildWhen` parameter!
 
 ```dart
 buildWhen: (notification) {
-  // Now if a passed color would be red, the notification will be ignored!
+  // Now if the passed notification will have a red color it will be ignored!
   return notification.color != Colors.red,
 }
 ```
