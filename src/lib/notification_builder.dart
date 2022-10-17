@@ -13,6 +13,44 @@ typedef _BuildWhenCallback<T extends Notification> = bool Function(
   T notification,
 );
 
+/// A widget that builds using notifications dispatched via the build context.
+///
+/// ### How to use
+///
+/// 1. Define your notification:
+///    ```dart
+///      class ColorNotification extends Notification {
+///      const ColorNotification(this.color);
+///
+///      final Color color;
+///    }
+///    ```
+///
+/// 2. Use a NotificationBuilder to catch notifications:
+///    ```dart
+///    NotificationBuilder<ColorNotification>(
+///      builder: (context, notification, child) {
+///        // Note: the notification parameter will be null at the very first build.
+///        // Use a fallback value like this.
+///        final color = notification?.color ?? Colors.white;
+///
+///        return AnimatedContainer(
+///          duration: const Duration(milliseconds: 200),
+///          curve: Curves.fastOutSlowIn,
+///          decoration: BoxDecoration(color: color),
+///          child: child,
+///        );
+///      },
+///      child: const SomeChild(...),
+///    ),
+///    ```
+///
+/// 3. Fire notifications from the widget tree below the builder:
+///    ```dart
+///    onPressed: () {
+///      ColorNotification(color).dispatch(context);
+///    },
+///    ```
 class NotificationBuilder<T extends Notification> extends StatefulWidget {
   const NotificationBuilder({
     Key? key,
