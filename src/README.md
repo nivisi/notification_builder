@@ -2,7 +2,6 @@
 
 🦻 A widget that builds using notifications dispatched via the build context.
 
-
 ### Table of contents
  - [About](https://github.com/nivisi/notification_builder#about)
    - [The problem](https://github.com/nivisi/notification_builder#the-problem)
