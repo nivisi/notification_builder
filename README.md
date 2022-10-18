@@ -3,14 +3,14 @@
 🦻 A widget that builds using notifications dispatched via the build context.
 
 ### Table of contents
- - [About](https://github.com/nivisi/notification_builder#about)
-   - [The problem](https://github.com/nivisi/notification_builder#the-problem)
-   - [The solution](https://github.com/nivisi/notification_builder#the-solution)
-   - [Result](https://github.com/nivisi/notification_builder#result)
-   - [If you don't want certain notification to trigger rebuilds...](https://github.com/nivisi/notification_builder#if-you-dont-want-certain-notification-to-trigger-rebuilds)
- - [Getting started](https://github.com/nivisi/notification_builder#getting-started)
-   - [pub](https://github.com/nivisi/notification_builder#pub)
-   - [Import](https://github.com/nivisi/notification_builder#import)
+ - [About](#about)
+   - [The problem](#the-problem)
+   - [The solution](#the-solution)
+   - [Result](#result)
+   - [If you don't want certain notification to trigger rebuilds...](#if-you-dont-want-certain-notification-to-trigger-rebuilds)
+ - [Getting started](#getting-started)
+   - [pub](#pub)
+   - [Import](#import)
 
 ## About
 
